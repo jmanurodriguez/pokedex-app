@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aplicación de Búsqueda de Pokémon</title>
+</head>
+<body>
+    <h1>Aplicación de Búsqueda de Pokémon</h1>
+    <div id="contenedor-pokedex">
+        <div id="pokedex">
+            <label for="input-busqueda">Ingrese el nombre o ID del Pokémon</label>
+            <div id="busqueda">
+                <input autocomplete="off" required type="text" id="input-busqueda">
+                <button id="boton-busqueda">Buscar</button>
+            </div>
+            <div id="informacion-pokemon">
+                <div>
+                    <span id="nombre-pokemon"></span>
+                    <span id="id-pokemon"></span>
+                </div>
+                <div id="imagen-pokemon"></div>
+                <p id="peso"></p>
+                <p id="altura"></p>
+                <div id="tipos"></div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Base</th>
+                        <th>Estadísticas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HP:</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>Ataque:</td>
+                        <td id="ataque"></td>
+                    </tr>
+                    <tr>
+                        <td>Defensa:</td>
+                        <td id="defensa"></td>
+                    </tr>
+                    <tr>
+                        <td>Ataque Especial:</td>
+                        <td id="ataque-especial"></td>
+                    </tr>
+                    <tr>
+                        <td>Defensa Especial:</td>
+                        <td id="defensa-especial"></td>
+                    </tr>
+                    <tr>
+                        <td>Velocidad:</td>
+                        <td id="velocidad"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
